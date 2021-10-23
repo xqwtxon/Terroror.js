@@ -1,4 +1,4 @@
-<h1 align=center><a href="https://github.com/xXhen2527Xx/SuperTerroror/"><img src="https://user-images.githubusercontent.com/85981610/138410773-c29bfe56-830c-4653-9613-ff7f93263170.png"></a></h1>
+<h1 align=center><a href="https://github.com/Minco-inc/Terroror.js/"><img src="https://user-images.githubusercontent.com/85981610/138410773-c29bfe56-830c-4653-9613-ff7f93263170.png"></a></h1>
 <p align=center>
     A <b>Terroror.js</b> bot, is made in <b>discord.js</b> to destroy discord servers!
 </p>
@@ -59,7 +59,7 @@ module.exports = EventManager; // export the eventmanager
 
 
 <p align=center>
-    View <a href="https://github.com/xXhen2527Xx/SuperTerroror/wiki/">Wiki</a> for <b>Full Installation and Guides</b> for building <b>SuperTerroror.js!</b>
+    View <a href="https://github.com/Minco-inc/Terroror.js/wiki/">Wiki</a> for <b>Full Installation and Guides</b> for building <b>SuperTerroror.js!</b>
 </p>
 
 <h1 align=center><a href="#"><img src="https://user-images.githubusercontent.com/85981610/138412398-8be72245-210b-433f-9aa8-ef37f569c831.png"></a></h1>
@@ -69,6 +69,6 @@ module.exports = EventManager; // export the eventmanager
 - Added `disnotify` on `package.json`
 - Added `@discord-opus`, `discord-api-types`, and other depencies of djs
 
-[`View History Changelogs`](/changelogs.md) for All Information!
+[`View History Changelogs`](/Changelogs.md) for All Information!
 
 <h3 align=right>- Made by MincoMK and Hen2527</h3>
