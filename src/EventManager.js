@@ -1,6 +1,6 @@
 const process = require("process");
 const version = require("../package.json").version;
-
+const chalk = require('chalk');
 /* 
 	Enables the SuperTerroror on Discord when bots join automatically make a bomb to server
 */
