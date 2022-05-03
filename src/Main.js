@@ -1,6 +1,10 @@
 const Discord = require("discord.js"); // enable discord.js
 const EventManager = require("./EventManager.js"); // adding eventmanager
-const { token } = require("../config.json"); // adding bot config
+// .env --> which stored secret data of the bot. 
+const dotenv = require('dotenv');
+dotenv.config();
+// We gonna get chalk
+const chalk = require('chalk');
 /*
 	If you use glitch or replit or other host are not 100% uptime, use this method.
 	This Make Your Bot Uptime But Not 100% Uptime, Use UptimeRobot.com For 24/7 Uptime
@@ -15,7 +19,7 @@ app.get('/', (request, response) => {
 });
 
 const listener = app.listen(process.env.PORT, () => {
-  console.log('Listening on Port: ' + '[' + listener.address().port + ']'); // logging console to tell ip and port when started to host
+  console.log(chalk.cyanBright('[INFO]'), 'Listening on Port: ' + '[' + listener.address().port + ']'); // logging console to tell ip and port when started to host
 });
 /* 
 	Enable Discord Intents
@@ -37,7 +41,7 @@ class Main {
 	}
 
 	login() {
-		this.client.login(token); // login bot using token
+		this.client.login(process.env.token); // login bot using token in .env
 	}
 }
 module.exports = Main;
