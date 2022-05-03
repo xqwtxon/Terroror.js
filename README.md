@@ -71,4 +71,9 @@ module.exports = EventManager; // export the eventmanager
 
 [`View History Changelogs`](/Changelogs.md) for All Information!
 
-<h3 align=right>- Made by MincoMK and Hen2527</h3>
+# Credits
+- MincoMK: Coding
+- Hen2527: Design/Commenting
+
+# License
+This repository is protected by BY-NC-SA Creative Commons license.
