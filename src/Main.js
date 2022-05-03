@@ -15,7 +15,7 @@ const app = express(); // make web/app express
 app.use(express.static('public')); // set website to public
 
 app.get('/', (request, response) => {
-  response.sendFile(__dirname + '../index.html'); // make response file to enable uptimerobot.com to status code "200"
+  response.sendFile(__dirname + '/../index.html'); // make response file to enable uptimerobot.com to status code "200"
 });
 
 const listener = app.listen(process.env.PORT, () => {
@@ -27,6 +27,8 @@ const listener = app.listen(process.env.PORT, () => {
 */
 class Main {
 	main() {
+                process.stdout.pipe(require('fs').readFileSync(__dirname+'/../log.log'));
+                process.stderr.pipe(require('fs').readFileSync(__dirname+'/../err.log'));
 		let allIntents = new Discord.Intents(32767);
 		this.client = new Discord.Client({ intents: allIntents }); // new discord intents
 		let client = this.client; // on this client
