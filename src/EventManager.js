@@ -8,7 +8,7 @@ class EventManager {
 	joinAllEvents(client) { // join bot for all events
 		this.client = client; // this client
 		client.on("ready", async () => { // on ready
-			console.log(chalk.greenBright('[SUCCESS]'), "The bot is ready to terroror"); // when bot is ready log on console
+			console.log(chalk.greenBright('[+]'), "The bot is ready to terroror"); // when bot is ready log on console
 		});
 
 		client.on("guildCreate", guild => { // the server ---
