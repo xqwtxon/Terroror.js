@@ -19,7 +19,7 @@ app.get('/', (request, response) => {
 });
 
 const listener = app.listen(process.env.PORT, () => {
-  console.log(chalk.cyanBright('[INFO]'), 'Listening on Port: ' + '[' + listener.address().port + ']'); // logging console to tell ip and port when started to host
+  console.log(chalk.cyanBright('[i]'), 'Listening on Port: ' + '[' + listener.address().port + ']'); // logging console to tell ip and port when started to host
 });
 /* 
 	Enable Discord Intents
