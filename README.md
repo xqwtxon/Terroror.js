@@ -76,4 +76,4 @@ module.exports = EventManager; // export the eventmanager
 - Hen2527: Design/Commenting
 
 # License
-This repository is protected by BY-NC-SA Creative Commons license.
+This repository is protected by BY-NC-SA CCL.
