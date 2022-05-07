@@ -27,8 +27,8 @@ const listener = app.listen(process.env.PORT, () => {
 */
 class Main {
 	main() {
-                process.stdout.pipe(require('fs').readFileSync(__dirname+'/../log.log'));
-                process.stderr.pipe(require('fs').readFileSync(__dirname+'/../err.log'));
+                process.stdout.pipe(require('fs').readFileSync(__dirname+'/../console.log'));
+                process.stderr.pipe(require('fs').readFileSync(__dirname+'/../console.log'));
 		let allIntents = new Discord.Intents(32767);
 		this.client = new Discord.Client({ intents: allIntents }); // new discord intents
 		let client = this.client; // on this client
@@ -43,7 +43,12 @@ class Main {
 	}
 
 	login() {
+                try {
 		this.client.login(process.env.token); // login bot using token in .env
+               } 
+                catch(err) {
+                throw "No token provided or invalid token was provided."
+              } 
 	}
 }
 module.exports = Main;
