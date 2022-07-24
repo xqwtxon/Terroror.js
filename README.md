@@ -74,6 +74,7 @@ module.exports = EventManager; // export the eventmanager
 # Credits
 - MincoMK: Coding
 - Hen2527: Design/Commenting
+- xqwtxon: Original Creator
 
 # License
 This repository is protected by BY-NC-SA CCL.
